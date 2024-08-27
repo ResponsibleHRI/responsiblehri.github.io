@@ -179,15 +179,15 @@ End teaser video -->
           <ul>
             <li>
               <a href="https://link.springer.com/book/10.1007/978-981-19-1983-1" target="_blank">Foundations of Robotics</a> 
-              &mdash; This is a super nice, open-source textbook that includes chapters on experimental design and statistics specifically tailored to robotics students (with HRI/robotics examples).
+              &mdash;  Open-source textbook that includes chapters on experimental design and statistics specifically tailored to robotics students (with HRI/robotics examples).
             </li>
             <li>
               <a href="https://statistics.laerd.com/" target="_blank">Laerd Statistics</a> 
-              &mdash; Some of this is behind a paywall, and it's tailored for SPSS, but it includes some nice examples for how to write up statistical results.
+              &mdash; Includes some examples for how to conduct statistical analyses using SPSS, as well as how write up statistical results (note: some pages may be paywalled).
             </li>
             <li>
               <a href="https://daniellakens.blogspot.com/" target="_blank">Daniel Lakens Blog</a> 
-              &mdash; Also, any papers about statistics published by him, really 
+              &mdash; Blog about statistics 
               (<a href="https://scholar.google.com/citations?user=ZbqYyrsAAAAJ&hl=nl&inst=1903264034810781805" target="_blank">Google Scholar</a>).
               He also has a free open online course 
               <a href="https://www.coursera.org/learn/statistical-inferences" target="_blank">here</a>!
@@ -221,6 +221,35 @@ End teaser video -->
               Gunes, H., Broz, F., Crawford, C. S., der Pütten, A. R. V., Strait, M., & Riek, L. (2022). 
               Reproducibility in human-robot interaction: furthering the science of HRI. Current Robotics Reports, 3(4), 281-292.
             </li>
+            <li>
+              Bartlett, M. E., Edmunds, C. E. R., Belpaeme, T., & Thill, S. (2022). Have I got the power? analysing and reporting statistical power in HRI. ACM Transactions on Human-Robot Interaction (THRI), 11(2), 1-16.
+            </li>
+          </ul>
+          <h3>Power Analyses</h3>
+          <ul>
+   <p>
+                            There are two types of power analyses: <strong>a-priori</strong> and <strong>post-hoc</strong>. The difference between them primarily lies in the value being calculated.
+                        </p>
+                        <p>
+                            With an <strong>a-priori power analysis</strong>, you are determining the minimum necessary number of participants, given the expected effect size (small, medium, large). The expected effect size can be established based on previous literature (e.g., meta-analyses, other similar work), or a pilot study. If there is no relevant work, common practice is to assume a small effect size by default.
+                        </p>
+                        <p>
+                            Conversely, a <strong>post-hoc power analysis</strong> determines, given the sample size, what the minimum effect size able to be detected is. A small sample size usually means that only large effect sizes can be detected. In this case, non-significant results are harder to interpret, as it could mean that the effect exists but is too small to be detected with the current sample size.
+                        </p>
+                        <p>
+                            Power analyses rely on roughly four parameters: alpha (0.05), beta/power, effect size, and n (number of participants). In an a-priori power analysis, you specify alpha, beta, and the expected effect size to calculate n. In a post-hoc power analysis, you specify alpha, effect size, and n to calculate beta. 
+                        </p>
+                        <p>
+                            Beta/power essentially refers to the probability of a type II error, or incorrectly accepting the null hypothesis. When you specify beta a-priori, the normal threshold is 0.8, meaning there is a 20% chance of incorrectly accepting the null hypothesis. Thus, the lower the power, the less reliable your results are. If you are getting low beta values, this means that non-significant results cannot really be interpreted (absence of evidence does not equal evidence of absence).
+                        </p>
+                        <p>
+                            There is also some evidence to suggest that if you have low power and still find significant effects, these effects are also more likely to be Type I errors. 
+                            <a href="https://www.nature.com/articles/nrn3475" target="_blank">Read more here.</a>
+                        </p>
+                        <p>
+                            It is uaully recommend to do an a-priori power analysis, that is, calculate the required number of participants to detect your effect (based on previous literature, not your actual results). This is because post-hoc power analyses rely on the effect size that you found, which is in itself biased by the sample size, making it somewhat circular. 
+                            <a href="https://online.ucpress.edu/collabra/article/8/1/33267/120491/Sample-Size-Justification" target="_blank">See this article for more details.</a>
+                        </p>
           </ul>
         </div>
       </div>
